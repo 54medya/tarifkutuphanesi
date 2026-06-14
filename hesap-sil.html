@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hesap Silme Talebi — Tarif Kütüphanesi</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #FAF9F6; color: #2D2621; padding: 20px; }
+  .container { max-width: 600px; margin: 40px auto; }
+  .logo { text-align: center; margin-bottom: 32px; }
+  .logo h1 { font-size: 24px; font-weight: 900; color: #8C2F1B; }
+  .logo p { color: #888; font-size: 14px; margin-top: 4px; }
+  .card { background: white; border-radius: 20px; padding: 32px; box-shadow: 0 2px 20px rgba(0,0,0,0.08); margin-bottom: 20px; }
+  h2 { font-size: 18px; font-weight: 900; color: #2D2621; margin-bottom: 16px; }
+  p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 12px; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { font-size: 14px; color: #555; line-height: 1.8; }
+  .steps { counter-reset: step; }
+  .step { display: flex; gap: 16px; margin-bottom: 20px; align-items: flex-start; }
+  .step-num { background: #8C2F1B; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 14px; shrink: 0; flex-shrink: 0; }
+  .step-content h3 { font-size: 14px; font-weight: 700; color: #2D2621; margin-bottom: 4px; }
+  .step-content p { margin: 0; font-size: 13px; }
+  .email-btn { display: block; background: #8C2F1B; color: white; text-align: center; padding: 16px; border-radius: 14px; text-decoration: none; font-weight: 900; font-size: 15px; margin-top: 20px; }
+  .email-btn:hover { background: #5C1F11; }
+  .warning { background: #FFF8F0; border: 1px solid #FFD5A0; border-radius: 12px; padding: 16px; margin-top: 16px; }
+  .warning p { color: #8C4A00; margin: 0; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  th { background: #F5F0EB; padding: 10px 12px; text-align: left; font-size: 12px; font-weight: 700; color: #888; }
+  td { padding: 10px 12px; font-size: 13px; border-bottom: 1px solid #F0EDE8; color: #555; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <h1>🍽️ Tarif Kütüphanesi</h1>
+    <p>Hesap Silme Talebi</p>
+  </div>
+
+  <div class="card">
+    <h2>Hesabınızı Nasıl Silebilirsiniz?</h2>
+    <p>Tarif Kütüphanesi hesabınızı silmek için aşağıdaki adımları izleyebilirsiniz.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Uygulama içinden silme (Önerilen)</h3>
+          <p>Uygulamayı açın → <strong>Profil</strong> sekmesine gidin → <strong>Ayarlar</strong> → <strong>Hesabı Sil</strong> seçeneğine tıklayın ve onaylayın.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>E-posta ile talep gönderin</h3>
+          <p>Aşağıdaki butona tıklayarak <strong>destek@tarifkutuphanesi.com</strong> adresine hesap silme talebi gönderin. Kayıtlı e-posta adresinizi belirtin.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Onay ve işlem süresi</h3>
+          <p>Talebiniz <strong>7 iş günü</strong> içinde işleme alınır ve hesabınız kalıcı olarak silinir.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="mailto:destek@tarifkutuphanesi.com?subject=Hesap Silme Talebi&body=Merhaba,%0A%0ATarif Kütüphanesi hesabımın silinmesini talep ediyorum.%0A%0AKayıtlı e-posta adresim: [E-POSTA ADRESİNİZİ YAZIN]%0A%0ASaygılarımla." class="email-btn">
+      ✉️ Hesap Silme Talebi Gönder
+    </a>
+
+    <div class="warning">
+      <p>⚠️ <strong>Dikkat:</strong> Hesabınız silindikten sonra tüm verileriniz kalıcı olarak silinir ve geri alınamaz. Premium aboneliğiniz varsa önce Google Play üzerinden iptal etmeyi unutmayın.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Silinen ve Saklanan Veriler</h2>
+    <table>
+      <tr><th>Veri Türü</th><th>İşlem</th><th>Saklama Süresi</th></tr>
+      <tr><td>Ad ve e-posta</td><td>Kalıcı silme</td><td>Hemen silinir</td></tr>
+      <tr><td>Favori tarifler</td><td>Kalıcı silme</td><td>Hemen silinir</td></tr>
+      <tr><td>Koleksiyonlar</td><td>Kalıcı silme</td><td>Hemen silinir</td></tr>
+      <tr><td>Yorumlar</td><td>Anonim hale getirilir</td><td>30 gün sonra silinir</td></tr>
+      <tr><td>Alışveriş listesi</td><td>Kalıcı silme</td><td>Hemen silinir</td></tr>
+      <tr><td>Yemek planı</td><td>Kalıcı silme</td><td>Hemen silinir</td></tr>
+      <tr><td>Pişirme geçmişi</td><td>Kalıcı silme</td><td>Hemen silinir</td></tr>
+      <tr><td>Ödeme kayıtları</td><td>Yasal zorunluluk</td><td>10 yıl (vergi mevzuatı)</td></tr>
+    </table>
+  </div>
+
+  <p style="text-align:center; font-size:12px; color:#bbb; margin-top:20px;">
+    © 2025 Tarif Kütüphanesi · <a href="mailto:destek@tarifkutuphanesi.com" style="color:#8C2F1B;">destek@tarifkutuphanesi.com</a>
+  </p>
+</div>
+</body>
+</html>
